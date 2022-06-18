@@ -1,0 +1,12 @@
+npm init vite-app <project name>
+npm run dev
+vue3-grid-layout
+d3
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-brands-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+npm i --save @fortawesome/vue-fontawesome@prerelease
+npm install element-plus --save
+npm i d3-interpolate-path
+npm install d3-scale-chromatic
