@@ -55,7 +55,12 @@ export default {
       reader.onload = (e) => {
         const fileString = e.target.result;
         try {
-          patristic.parseNewick(fileString);
+          let res = patristic.parseNewick(fileString);
+          if(res.children.length === 0){
+            ElMessage.error("Not a valid newick text file!");
+            this.removeFile();
+            return
+          }
           this.fileString = fileString;
           this.fileName = file.name.replace(/\.[^/.]+$/, "");
         } catch (err) {

@@ -89,7 +89,7 @@ const initPadding = () => {
 
 const param = reactive({
   currentTransform: null,
-  duration: 500,
+  duration: 1000,
   padding: initPadding(),
 });
 
@@ -494,7 +494,6 @@ const onData = (data) => {
   internaldata.root = root;
   sortTree()
   redraw();
-  console.log(data.leaves().length)
 };
 
 const sortTree = () => {
@@ -669,7 +668,6 @@ onMounted(() => {
 
   data && onData(data);
 });
-
 //#endregion 
 
 
